@@ -13,4 +13,4 @@ client.once('ready', () => {
 
     console.log('bot is ready ${client.user.tag}');
 });
-client.login('MTMwMTIwODAzNTM4NTE1MTU2Mw.GJnlHy.eN4hDbkaNbCzjbSSziOX_YPoxeOu_Z9P_diRf8')
+client.login('MTMwMTIwODAzNTM4NTE1MTU2Mw.G5wBHH.kIywsmhZytYaUQOEpv14OoCdPPiDXSZYo5zCW4')
