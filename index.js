@@ -6,17 +6,19 @@ const client = new Client({
     }),
 });
 
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 4000;
-
+const express = require("express");
+const app = express();
+const port = 3000;
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
+    const imagePath = path.join(__dirname, 'index.html');
+    res.sendFile(imagePath);
+});
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+    console.log(`🔗 Listening to MohammedQht : http://localhost:${port}`);
+});
+client.login(process.env.TOKEN || config.token);
+module.exports = client;
+
 client.once('ready', () => {
 
     console.log('bot is ready ${client.user.tag}');
